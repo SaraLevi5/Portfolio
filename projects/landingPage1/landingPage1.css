@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: 1056px 568px 295px; */
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: 157px 433px 209px; */
+    grid-template-rows: repeat(6, 1fr);
+    /* overflow: hidden; */
+
+}
+
+img[alt="desktopimage"] {
+    width: 99vw;
+    height: 54vh;
+    grid-column: 1/5;
+    grid-row: 1/4;
+}
+
+img[alt="mobileimage"] {
+    display: none;
+}
+
+
+.form {
+    background-color: #1A1A1AD4;
+    width: 30vw;
+    height: 70vh;
+    grid-column: 4/5;
+    grid-row: 2/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    color: #FFFFFF;
+    font: normal normal 900 36px/53px Heebo;
+    /* font-size: 2.5rem; */
+    /* margin-bottom: 21px; */
+    text-align: center;
+}
+
+p {
+    color: #F9F9F9;
+    font: normal normal normal 20px/29px Heebo;
+    /* font-size: 1.3rem; */
+    text-align: center;
+    /* margin-bottom: 69px; */
+}
+
+label {
+    color: #FFFFFF;
+    display: block;
+    /* margin-bottom: 1px; */
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+    /* font-size: 0.8rem; */
+}
+
+#Name,
+#email {
+    border: none;
+    width: 24vw;
+    height: 5vh;
+    /* margin-bottom: 20px; */
+    direction: rtl;
+}
+
+input[type=submit] {
+    background-color: #D31C75;
+    color: #FFFFFF;
+    border: none;
+    width: 8vw;
+    height: 5vh;
+    font: normal normal bold 22px/30px Heebo;
+    font-size: 1.3rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.button {
+    text-align: right;
+}
+
+@media (max-width: 1400px) {
+
+    img[alt="desktopimage"] {
+        display: none;
+    }
+
+    img[alt="mobileimage"] {
+        display: block;
+        width: 100vw;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font: normal normal 900 25px/30px Heebo;
+        /* margin-top: 42px; */
+        /* margin-bottom: unset; */
+        /* padding: 10px; */
+
+    }
+
+    p {
+        font: normal normal normal 15px/22px Heebo;
+        text-align: center;
+        /* margin-bottom: unset; */
+        padding: 25px;
+    }
+
+    .form {
+        width: 70vw;
+        height: 75vh;
+        position: absolute;
+        top: 89px;
+        bottom: 129px;
+    }
+
+    label {
+        font: normal normal bold 14px/21px Heebo;
+    }
+
+    #Name {
+        width: 52vw;
+        height: 5vh;
+        /* margin-bottom: 25px; */
+    }
+
+    #email {
+        width: 52vw;
+        height: 5vh;
+        /* margin-bottom: 21px; */
+    }
+
+    input[type=submit] {
+        width: 20vw;
+        height: 5vh;
+        font: normal normal bold 15px/20px Heebo;
+    }
+}

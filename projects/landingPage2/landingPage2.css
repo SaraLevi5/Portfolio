@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: linear-gradient(180deg, #281EFF, #2DFF8C);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content {
+  /* border: 1px solid #000; */
+  width: 63.2vw;
+  height: 43vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.text {
+  /* border: 1px solid #000; */
+  width: 53vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+  flex-wrap: wrap;
+}
+
+.text h1 {
+  color: #fff;
+  font: normal normal normal 160px/231px Satisfy;
+  text-shadow: 0px 0px 36px #00000087;
+}
+
+.text h2 {
+  color: #fff;
+  font: normal normal normal 32px/38px Varela Round;
+}
+
+.text p {
+  color: #fff;
+  font: normal normal normal 16px/20px Varela Round;
+}
+
+.form-section {
+  /* border: 1px solid #000; */
+  width: 60vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.form-section label {
+  display: block;
+  direction: rtl;
+}
+
+.form-section label,
+input {
+  color: #fff;
+  font: normal normal normal 16px/20px Varela Round;
+}
+
+.form-section input:focus {
+  outline: none;
+}
+
+.input-box input {
+  width: 418px;
+  height: 50px;
+  border: 1px solid #fff;
+  background: transparent;
+  direction: rtl;
+}
+
+
+.btn input {
+  color: #000;
+  background-color: #fff;
+  border: none;
+  width: 206px;
+  height: 50px;
+}

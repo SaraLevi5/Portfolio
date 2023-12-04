@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: #E5EEFF;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 298px;
+    margin-bottom: 266px;
+    justify-items: center;
+}
+
+.section {
+    width: 613px;
+    height: 562px;
+    background-color: #020253;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    text-align: center;
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+
+img {
+    width: 296px;
+    height: 271px;
+
+}
+
+.section h1 {
+    color: #0EE1DA;
+    font: normal normal bold 61px/80px Assistant;
+    text-align: center;
+}
+
+.section p {
+    color: #F9F9F9;
+    font: normal normal normal 20px/26px Assistant;
+    direction: rtl;
+    text-align: center;
+}
+
+
+.form {
+    background-color: #8E097C;
+    width: 613px;
+    height: 852px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    text-align: center;
+    grid-row: 4/7;
+    grid-column: 1/3;
+}
+
+.form h1 {
+    color: #FFFFFF;
+    font: normal normal bold 35px/46px Assistant;
+}
+
+.form p {
+    color: #F9F9F9;
+    font: normal normal normal 20px/26px Assistant;
+}
+
+.form form {
+    color: #0EE1DA;
+    direction: rtl;
+    font: normal normal bold 16px/24px Heebo;
+}
+
+label[for="Name"] {
+    display: block;
+    margin-bottom: 4.96px;
+    text-align: right;
+}
+
+label[for="email"] {
+    display: block;
+    margin-bottom: 3.35px;
+    text-align: right;
+}
+
+label[for="freeText"] {
+    display: block;
+    margin-bottom: 5.64px;
+    text-align: right;
+}
+
+#Name {
+    text-decoration: underline, #0EE1DA;
+    background-color: #E5EEFF;
+    border: none;
+    /* Remove default border */
+    border-bottom: 5px solid #0EE1DA;
+    width: 500px;
+    height: 60px;
+
+}
+
+#email {
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 5px solid #0EE1DA;
+    width: 500px;
+    height: 60px;
+}
+
+#freeText {
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 5px solid #0EE1DA;
+    width: 500px;
+    height: 60px;
+}
+
+#freeText {
+    width: 500px;
+    height: 172px;
+    margin-bottom: 20.24px;
+}
+
+input[type="submit"] {
+    color: #011560;
+    background-color: #0EE1DA;
+    width: 501px;
+    height: 60px;
+    border: none;
+    font: normal normal bold 24px/33px Heebo;
+}
+
+@media (max-width:767px) {
+    .container {
+        width: 95vw;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(auto-fill, 1fr); */
+        grid-template-rows: repeat(11, 1fr);
+        /* grid-template-rows: repeat(auto-fill, 1fr); */
+        margin: unset;
+        gap: 10px;
+
+    }
+
+    .section {
+        width: 100vw;
+        height: 100%;
+        /* height: 60vh; */
+        grid-column: 1/3;
+        grid-row: 1/3;
+        /* grid-column: span 2;
+        grid-row: span 2; */
+    }
+
+    .section h1 {
+        font: normal normal bold 36px/47px Assistant;
+    }
+
+    .section p {
+        font: normal normal normal 20px/26px Assistant;
+        padding: 40px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+    }
+
+    .form {
+        width: 95vw;
+        height: 100%;
+        /* height: 75vh; */
+        /* grid-column: 1/3; */
+        grid-row: 7/9;
+    }
+
+    .form h1 {
+        font: normal normal bold Assistant;
+        font-size: 1.8rem;
+        margin-top: 60px;
+    }
+
+    .form p {
+        font: normal normal normal Assistant;
+        font-size: 1.1rem;
+        padding: 30px;
+
+    }
+
+    .form label {
+        font: normal normal bold Heebo;
+        font-size: 0.7rem;
+    }
+
+    #Name {
+        margin-bottom: 17px;
+    }
+
+    #email {
+        margin-bottom: 11px;
+    }
+
+    #freeText {
+        width: 80vw;
+        height: 16vh;
+        /* height: 96px; */
+        margin-bottom: 13px;
+        border-bottom: 3px solid #0EE1DA;
+    }
+
+    #Name,
+    #email,
+    input[type="submit"] {
+        width: 80vw;
+        height: 10%;
+        border-bottom: 3px solid #0EE1DA;
+    }
+
+    input[type="submit"] {
+        font: normal normal bold Heebo;
+        font-size: 0.9rem;
+        letter-spacing: 0.18px;
+        margin-bottom: 60px;
+    }
+}
