@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Portfolio Home Page</title>
     <link rel="stylesheet" href="./index.css" />
     <link
@@ -31,20 +32,22 @@
   </head>
 
   <body>
-    <!-- nav>ul>li*6>a -->
-    <!-- <p><a href="#top">Back To Top</a></p> -->
-
-    <header class="navBar">
-      <div class="hamburger">&#9776;</div>
+    <header>
       <div class="logo">
-        <img src="./images/photo-Of-Me.png" alt="Sarah Levi photo small" />
-        <a href="#" id="logoName">Sarah Levi</a>
+        <a href="#About"
+          ><img src="./images/photo-Of-Me.png" alt="" class="myPhoto"
+        /></a>
+        <a href="#About" id="name">Sarah Levi</a>
       </div>
+
       <nav>
-        <a href="#Main">Main</a>
-        <a href="#About">About</a>
-        <a href="#Works">Works</a>
-        <a href="#Contact">Contact</a>
+        <div class="hamburger">&#9776;</div>
+        <ul>
+          <li><a class="dropNav" href="#About">About</a></li>
+          <li><a class="dropNav" href="#Works">Works</a></li>
+          <li><a class="dropNav" href="#Contact">Contact</a></li>
+          <li><a class="dropNav" href="#Main">Main</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -267,12 +270,30 @@
 
     <footer>
       <div id="icons">
-        <i class="fa-brands fa-facebook fa-xl">Sara Rachel Levi</i>
-        <i class="fa-brands fa-linkedin fa-xl"></i>
-        <i class="fa-solid fa-phone fa-xl">054-7259370</i>
-        <i class="fa-brands fa-whatsapp fa-xl">054-7259370</i>
-        <i class="fa-solid fa-at fa-xl"></i>
-        <i class="fa-solid fa-location-dot fa-xl">Israel</i>
+        <div>
+          <i class="fa-brands fa-facebook fa-xl"> </i>
+          <p>Israeli-Israeli</p>
+        </div>
+        <div>
+          <i class="fa-brands fa-linkedin fa-xl"> </i>
+          <p>Israeli-Israeli</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone fa-xl"> </i>
+          <p>054-7259370</p>
+        </div>
+        <div>
+          <i class="fa-brands fa-whatsapp fa-xl"> </i>
+          <p>054-7259370</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-at fa-xl"> </i>
+          <p>sarah75373@gmail.com</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot fa-xl"> </i>
+          <p>israel</p>
+        </div>
       </div>
       <div id="copyright">
         <div>Copyright&copy;</div>

@@ -5,23 +5,23 @@
   scroll-behavior: smooth;
 }
 :root {
-  --fz: 1rem;
+  --fz: 1.2rem;
   --ff: Heebo;
   --color: rgba(218, 124, 189, 0.596);
 }
 
-img[alt~="small"] {
+.myPhoto {
   max-width: 4vw;
   border-radius: 50%;
 }
 
-.navBar {
+header {
   display: flex;
   justify-content: space-evenly;
   min-height: 9vh;
 }
 
-.navBar a {
+header a {
   text-decoration: none;
   color: black;
   font-family: var(--ff);
@@ -29,8 +29,18 @@ img[alt~="small"] {
   transition: 0.3s linear;
 }
 
-.navBar a:hover {
+nav a:hover {
   color: var(--color);
+}
+
+nav ul li {
+  width: 150px;
+  height: 2.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
 }
 
 .logo {
@@ -39,7 +49,7 @@ img[alt~="small"] {
   align-items: center;
 }
 
-#logoName {
+.logo a {
   font-family: "Caveat", cursive;
   font-size: var(--fz);
 }
@@ -54,9 +64,9 @@ nav {
 }
 
 .hamburger {
-  font-size: var(--fz);
   color: #000;
-  padding: 5px;
+  cursor: pointer;
+  font-size: 2rem;
   font-weight: bold;
   display: none;
 }
@@ -171,11 +181,17 @@ nav {
 
 #icons {
   min-height: 10vh;
+  padding: 2rem;
   background-color: var(--color);
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+#icons div {
+  width: 200px;
 }
 
 #copyright {
@@ -186,15 +202,62 @@ nav {
   background-color: black;
 }
 
-@media (max-width: 600px) {
-  #contact {
+@media (max-width: 700px) {
+  nav {
+    display: flex;
     flex-direction: column;
   }
   .hamburger {
-    font-size: var(--fz);
-    color: #000;
-    padding: 5px;
-    font-weight: bold;
+    width: 100%;
     display: block;
+    color: #000;
+    text-align: right;
+  }
+
+  nav .hamburger + ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav :active.hamburger + ul {
+    display: block;
+  }
+  nav ul li {
+    text-align: center;
+
+    width: 100vw;
+    height: 14vh;
+    background-image: linear-gradient(
+        to bottom,
+        var(--color),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("./images/backImage.jpg");
+    border-bottom: inset 1px #3a3a3a8f;
+  }
+  nav ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .myPhoto {
+    max-width: 10vw;
+  }
+
+  .logo #name {
+    display: none;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  #letterImage {
+    max-width: 30%;
   }
 }
