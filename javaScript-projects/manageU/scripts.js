@@ -4,11 +4,15 @@ import TaskManager from "./classes/TaskManager.js";
 const manager = new TaskManager();
 
 function showTaskInList() {
-  let tasksHTML = document.getElementById("active");
-  tasksHTML.innerHTML = "";
+  const active = document.getElementById("active");
+  const completed = document.getElementById("completed");
+
+  active.innerHTML = "";
+  completed.innerHTML = "";
+
   for (let task of manager.tasks) {
     if (task.status == false) {
-      tasksHTML.innerHTML += `
+      active.innerHTML += `
             <li class="list-group-item d-flex justify-content-between">
               ${task.description}
               <div class="icons">
@@ -31,10 +35,8 @@ function showTaskInList() {
             </li>
             `;
     } else {
-      const completed = document.getElementById("completed");
-
       completed.innerHTML += `
-          <li class="list-group-item d-flex justify-content-between       text-decoration-line-through">Task completed: ${task.description}</li>
+          <li class="list-group-item d-flex justify-content-between       text-decoration-line-through"> ${task.description}</li>
     `;
     }
   }

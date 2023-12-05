@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio Home Page</title>
+    <link rel="stylesheet" href="./presentationPage1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Satisfy&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#About"><img src="./" alt="" class="myPhoto" /></a>
+        <a href="#About" id="name">Sarah Levi</a>
+      </div>
+
+      <nav>
+        <div class="hamburger">&#9776;</div>
+        <ul>
+          <li><a class="dropNav" href="#About">About</a></li>
+          <li><a class="dropNav" href="#Works">Works</a></li>
+          <li><a class="dropNav" href="#Contact">Contact</a></li>
+          <li><a class="dropNav" href="#Main">Main</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="Main">
+      <section class="textContainer">
+        <h1>Hello, it's me!</h1>
+
+        <h2>Sara Rachel Levi,</h2>
+
+        <h4>a passionate and creative Fullstack Developer.</h4>
+
+        <h6>
+          I love turning ideas into digital reality,<br />
+          emphasizing clean code and user-centered design for smooth & stunning
+          websites.
+          <br />
+          <br />
+          I enjoy solving problems and paying attention to details. <br />
+          I'm always up for a challenge and excited to learn and improve.
+        </h6>
+      </section>
+    </main>
+
+    <section class="technologies">
+      <img src="./images/img-HTML.png" alt="" />
+      <img src="./images/img-CSS.png" alt="" />
+      <img src="./images/img-SASS.png" alt="" />
+      <img src="./images/img-Bootstrap.png" alt="" />
+    </section>
+
+    <section id="About">
+      <div class="textOnPhoto">
+        <br />
+        <img
+          src="./images/poto-Of-Me-2.jpg"
+          alt="Sarah Levi photo big"
+          class="img-fluid"
+          id="myImage"
+          onclick="showPhoto()"
+        />
+      </div>
+      <div id="aBitAboutMe">
+        <p>A bit about me...</p>
+        <p>
+          Fullstack Developer!
+          <br />
+          Full name: Sara Rachel Levi
+          <br />
+          Profession: Fullstack Web Developer
+          <br />
+          Email: sarah75373@gmail.com
+          <br />
+          Phone: 054-7259370
+          <br />
+          My main knowledge: HTML 5, CSS, SASS, Bootstrap, JavaScript...
+        </p>
+
+        <a href="#" download="resume" class="btn btn-primary">Download CV</a>
+      </div>
+    </section>
+
+    <section id="Works">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card col-lg-4 mb-2 me-5" style="width: 15rem">
+              <img src="./images/1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="./projects/landingPage1/landingPage1.html"
+                  class="btn btn-primary"
+                >
+                  Project page &#8811;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card col-lg-4 mb-2 me-5" style="width: 15rem">
+              <img src="./images/2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="./projects/landingPage2/landingPage2.html"
+                  class="btn btn-primary"
+                  >Project page &#8811;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card col-lg-4 mb-2 me-5" style="width: 15rem">
+              <img src="./images/5.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="./projects/landingPage5/landingPage5.html"
+                  class="btn btn-primary"
+                  >Project page &#8811;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card col-lg-4 mb-2 me-5" style="width: 15rem">
+              <img src="./images/6.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="./projects/landingPage6/landingPage6.html"
+                  class="btn btn-primary"
+                  >Project page &#8811;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card col-lg-4 mb-2 me-5" style="width: 15rem">
+              <img src="./images/4.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="./projects/landingPage4/landingPage4.html"
+                  class="btn btn-primary"
+                  >Project page &#8811;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card col-lg-4 mb-2 me-5" style="width: 15rem">
+              <img src="./images/3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="./projects/landingPage3/landingPage3.html"
+                  class="btn btn-primary"
+                  >Project page &#8811;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <img
+        src="./images/Rectangle 41@2x.png"
+        alt="letter image"
+        class="img-fluid"
+        id="letterImage"
+      />
+
+      <div id="form" class="container w-auto my-5">
+        <h5>Hire me</h5>
+        <p>Let's connect and bring your digital ideas to life.</p>
+
+        <form>
+          <div class="mb-3">
+            <label for="Full Name" class="form-label">Full Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Full Name"
+              placeholder="Full Name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="Email address" class="form-label">Email address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Email address"
+              placeholder="Email address"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="Phone number" class="form-label">Phone number</label>
+            <input
+              type="number"
+              class="form-control"
+              id="Phone number"
+              placeholder="Phone number"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="Content" class="form-label">Content</label>
+            <textarea class="form-control" id="Content" rows="3"></textarea>
+          </div>
+          <input type="submit" value="Send" class="btn btn-primary" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div id="icons">
+        <div>
+          <i class="fa-brands fa-facebook fa-xl"> </i>
+          <p>Israeli-Israeli</p>
+        </div>
+        <div>
+          <i class="fa-brands fa-linkedin fa-xl"> </i>
+          <p>Israeli-Israeli</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone fa-xl"> </i>
+          <p>054-7259370</p>
+        </div>
+        <div>
+          <i class="fa-brands fa-whatsapp fa-xl"> </i>
+          <p>054-7259370</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-at fa-xl"> </i>
+          <p>sarah75373@gmail.com</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot fa-xl"> </i>
+          <p>israel</p>
+        </div>
+      </div>
+      <div id="copyright">
+        <div>Copyright&copy;</div>
+        <div>Sara Rachel Levi</div>
+      </div>
+    </footer>
+  </body>
+</html>

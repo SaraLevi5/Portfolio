@@ -62,7 +62,6 @@ const creatCard = (country) => {
   card.appendChild(cardBody);
   cardFooter.appendChild(heart);
   card.appendChild(cardFooter);
-
   cards.appendChild(card);
 };
 
@@ -72,10 +71,6 @@ const creatCardList = () => {
   }
 };
 
+/////////
+
 export { creatCardList };
-
-// const select = document.getElementById("select").value;
-
-// select.addEventListener("change", function () {
-//   cards.innerHTML = `your favorite countries: ${likedCountries}`;
-// });
