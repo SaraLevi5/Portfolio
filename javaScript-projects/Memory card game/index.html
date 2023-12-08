@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="gameBox">
+        <h1>Animals Memory Game</h1>
+        <div id="gameBoard"></div>
+        <button id="reset" onclick="resetGame()">Reset Game</button>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Designed by Sara Levi. icons by
+        <a
+          target="_blank"
+          href="https://icons8.com/icon/HSsZYiqvIGBc/pet-commands-summon"
+          >Pet Commands Summon</a
+        >
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </p>
+    </footer>
+    <script>
+      const imagesArray = [
+        "./images/1.png",
+        "./images/1.png",
+        "./images/2.png",
+        "./images/2.png",
+        "./images/3.png",
+        "./images/3.png",
+        "./images/4.png",
+        "./images/4.png",
+        "./images/5.png",
+        "./images/5.png",
+        "./images/6.png",
+        "./images/6.png",
+        "./images/7.png",
+        "./images/7.png",
+        "./images/8.png",
+        "./images/8.png",
+      ];
+
+      const mixImagesCards = imagesArray.sort(() => Math.random() - 0.5);
+
+      imagesArray.forEach((img) => {
+        document.getElementById(
+          "gameBoard"
+        ).innerHTML += `<div class="card" onclick="gameRules(this)"><img src="${img}"/></div>`;
+      });
+
+      const gameRules = (clickedCard) => {
+        clickedCard.classList.add("open");
+        let open = Array.from(document.getElementsByClassName("open"));
+        console.log(open);
+
+        setTimeout(function () {
+          if (open.length === 2) {
+            if (
+              open[0].querySelector("img").src ===
+              open[1].querySelector("img").src
+            ) {
+              open[0].classList.add("match");
+              open[1].classList.add("match");
+
+              open[1].classList.remove("open");
+              open[0].classList.remove("open");
+
+              if (
+                document.querySelectorAll(".match").length ===
+                imagesArray.length
+              ) {
+                alert("It's a win, Welldone!");
+              }
+            } else {
+              open.forEach((card) => card.classList.remove("open"));
+            }
+          }
+        }, 500);
+      };
+
+      const resetGame = () => {
+        location.reload();
+      };
+    </script>
+  </body>
+</html>
