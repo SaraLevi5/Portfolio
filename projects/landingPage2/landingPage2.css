@@ -5,61 +5,54 @@
 }
 
 .container {
-  background: linear-gradient(180deg, #281EFF, #2DFF8C);
+  background: linear-gradient(180deg, #281eff, #2dff8c);
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .content {
-  /* border: 1px solid #000; */
-  width: 63.2vw;
+  width: 50vw;
   height: 43vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .text {
-  /* border: 1px solid #000; */
-  width: 53vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   direction: rtl;
-  flex-wrap: wrap;
 }
 
 .text h1 {
   color: #fff;
   font: normal normal normal 160px/231px Satisfy;
-  text-shadow: 0px 0px 36px #00000087;
+  font-size: 6rem;
+  text-shadow: 0px 0px 40px #00000087;
 }
 
-.text h2 {
+.text h3 {
   color: #fff;
   font: normal normal normal 32px/38px Varela Round;
+  font-size: 1.5rem;
 }
 
 .text p {
   color: #fff;
   font: normal normal normal 16px/20px Varela Round;
+  font-size: 0.7rem;
 }
 
 .form-section {
-  /* border: 1px solid #000; */
   width: 60vw;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: end;
-  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .form-section label {
@@ -78,18 +71,50 @@ input {
 }
 
 .input-box input {
-  width: 418px;
-  height: 50px;
+  width: 15vw;
+  height: 5vh;
   border: 1px solid #fff;
   background: transparent;
   direction: rtl;
 }
 
-
 .btn input {
   color: #000;
   background-color: #fff;
   border: none;
-  width: 206px;
-  height: 50px;
+  width: 15vw;
+  height: 5vh;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .content {
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .text h1 {
+    height: 25vh;
+    font-size: 2.5rem;
+  }
+  .text h3,
+  .text p {
+    font-size: 0.7rem;
+  }
+
+  .form-section {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-box input {
+    width: 50vw;
+    height: 4vh;
+  }
+
+  .btn input {
+    width: 50vw;
+    height: 4vh;
+  }
 }
