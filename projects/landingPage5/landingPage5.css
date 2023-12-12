@@ -17,23 +17,15 @@ body {
   margin-bottom: 5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: repeat(6, 1fr); */
   gap: 0.5rem;
-  /* margin-top: 298px;
-  margin-bottom: 266px; */
-  /* justify-items: center; */
 }
 
 .blue-section {
-  /* width: 50vw;
-  height: 50vh; */
   background-color: #020253;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Center vertically */
   justify-content: center;
-  /* Center horizontally */
   grid-column: 3/5;
   grid-row: 1/3;
 }
@@ -51,27 +43,24 @@ body {
   text-align: center;
 }
 
-/* .img {
-  width: 200px;
-  height: 200px;
-} */
-
 .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 5px 10px 10px #0000004b;
+  filter: opacity(0.9);
+}
+
+.img img:hover {
+  filter: unset;
 }
 
 .form {
   background-color: #8e097c;
-  /* width: 50%;
-  height: 75vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Center vertically */
   justify-content: center;
-  /* Center horizontally */
   text-align: center;
   grid-column: 1/3;
   grid-row: 4/7;
@@ -116,7 +105,6 @@ label[for="freeText"] {
   text-decoration: underline, #0ee1da;
   background-color: #e5eeff;
   border: none;
-  /* Remove default border */
   border-bottom: 5px solid #0ee1da;
   width: 30vw;
   height: 5vh;
@@ -148,13 +136,17 @@ input[type="submit"] {
   font: normal normal bold 24px/33px Heebo;
 }
 
-@media (max-width: 767px) {
-  .container {
-    border: 1px solid #000;
+@media (max-width: 900px) {
+  body {
+    justify-content: unset;
+  }
 
+  .container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(11, 1fr);
-    margin: unset;
+    margin-top: unset;
+    margin-bottom: unset;
+    gap: unset;
   }
 
   .blue-section {
@@ -171,7 +163,16 @@ input[type="submit"] {
     font: normal normal normal 20px/26px Assistant;
   }
 
+  .img img {
+    padding: 0.3rem;
+    box-shadow: none;
+    filter: unset;
+  }
+
   .form {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+
     grid-column: 1/3;
     grid-row: 7/9;
   }
@@ -203,7 +204,6 @@ input[type="submit"] {
   #freeText {
     width: 80vw;
     height: 16vh;
-    /* height: 96px; */
     margin-bottom: 13px;
     border-bottom: 3px solid #0ee1da;
   }
