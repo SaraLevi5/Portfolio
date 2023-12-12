@@ -6,7 +6,8 @@
 }
 
 .container {
-  width: 1900px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .top {
@@ -21,8 +22,8 @@
 }
 
 .whatsapp-icon {
-  width: 5vw;
-  height: 10vh;
+  width: 50px;
+  height: 50px;
   background-color: #fdbd03;
   border-radius: 50%;
   display: flex;
@@ -37,6 +38,7 @@
 }
 
 .main {
+  width: 100vw;
   height: 79vh;
   display: flex;
   justify-content: space-evenly;
@@ -45,19 +47,21 @@
 }
 
 .main .phone-img img {
-  width: 27.9vw;
-  height: 80vh;
+  width: 220px;
+  height: 300px;
 }
 
 .title h1 {
   color: #fdbd03;
   font: normal normal 900 66px/97px Heebo;
+  font-size: 3rem;
   text-align: right;
 }
 
 .title p {
   color: #020253;
   font: normal normal normal 20px/29px Heebo;
+  font-size: 1rem;
   text-align: right;
   direction: rtl;
 }
@@ -65,26 +69,26 @@
 .form-section1 {
   height: 10vh;
   display: flex;
-
-  justify-content: space-between;
+  gap: 1rem;
 }
 
 .form-section2 {
-  height: 28vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1rem;
   align-items: end;
 }
 
 form label {
   font: normal normal bold 16px/24px Heebo;
+  font-size: 0.8rem;
   display: block;
   text-align: right;
 }
 
 #name,
 #email {
+  border: 10px solid #ee0101;
   width: 21.5vw;
   height: 5vh;
   border: none;

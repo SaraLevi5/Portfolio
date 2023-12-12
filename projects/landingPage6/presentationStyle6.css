@@ -50,7 +50,7 @@ header a {
       var(--color),
       rgba(255, 255, 255, 0.5)
     ),
-    url("./images/backImage.jpg");
+    url("../images/backImage.jpg");
   max-width: 100vw;
   min-height: 45vh;
   display: flex;
