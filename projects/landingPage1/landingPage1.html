@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>landing page1</title>
-    <link rel="stylesheet" href="./landingPage1.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./landingPage1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
+      <div class="img-box"></div>
+      <img src="./images/backImage.png" class="desktop-image" />
+      <img src="./images/backgroundResponsive.png" class="mobile-image" />
 
-        <img src="./images/backImage.png" alt="desktopimage">
-        <img src="./images/backgroundResponsive.png" alt="mobileimage">
+      <div class="form-box">
+        <h1>תן לנו להוביל אותך קדימה</h1>
+        <p>
+          לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא
+          מקום” בעת עריכ.
+        </p>
 
-        <div class="form">
-            <h1>תן לנו להוביל אותך קדימה</h1>
-            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
-            <form action="">
-                <label for="Name">שם מלא</label>
-                <input type="text" id="Name" required><br><br><br><br>
-                <label for="email">דוא"ל</label>
-                <input type="text" id="email" required><br><br><br><br>
-                <div class="button">
-                    <input type="submit" value="שליחה">
-                </div>
-            </form>
-        </div>
+        <form>
+          <div class="input-text">
+            <label for="Name">שם מלא</label>
+            <input type="text" id="Name" required />
+          </div>
+          <div class="input-text">
+            <label for="email">דוא"ל</label>
+            <input type="text" id="email" required />
+          </div>
+          <div class="button">
+            <input type="submit" value="שליחה" />
+          </div>
+        </form>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

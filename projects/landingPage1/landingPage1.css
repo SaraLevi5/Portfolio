@@ -1,155 +1,143 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .container {
-    display: grid;
-    /* grid-template-columns: 1056px 568px 295px; */
-    grid-template-columns: repeat(5, 1fr);
-    /* grid-template-rows: 157px 433px 209px; */
-    grid-template-rows: repeat(6, 1fr);
-    /* overflow: hidden; */
-
+  width: 100vw;
+  height: fit-content;
 }
 
-img[alt="desktopimage"] {
-    width: 99vw;
-    height: 54vh;
-    grid-column: 1/5;
-    grid-row: 1/4;
+.img-box {
+  width: 100vw;
 }
 
-img[alt="mobileimage"] {
-    display: none;
+.desktop-image {
+  width: 100%;
+  height: 100%;
 }
 
-
-.form {
-    background-color: #1A1A1AD4;
-    width: 30vw;
-    height: 70vh;
-    grid-column: 4/5;
-    grid-row: 2/5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.mobile-image {
+  display: none;
 }
 
-h1 {
-    color: #FFFFFF;
-    font: normal normal 900 36px/53px Heebo;
-    /* font-size: 2.5rem; */
-    /* margin-bottom: 21px; */
-    text-align: center;
+.form-box {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  background-color: #1a1a1ad4;
+  width: 45%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-p {
-    color: #F9F9F9;
-    font: normal normal normal 20px/29px Heebo;
-    /* font-size: 1.3rem; */
-    text-align: center;
-    /* margin-bottom: 69px; */
+.form-box h1 {
+  color: #ffffff;
+  font-family: Heebo;
+  text-align: center;
 }
 
-label {
-    color: #FFFFFF;
-    display: block;
-    /* margin-bottom: 1px; */
-    text-align: right;
-    font: normal normal bold 16px/24px Heebo;
-    /* font-size: 0.8rem; */
+.form-box p {
+  color: #ffffff;
+  font-family: Heebo;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-text label {
+  color: #ffffff;
+  display: block;
+  text-align: right;
+  font-family: Heebo;
+  font-size: 0.8rem;
 }
 
 #Name,
 #email {
-    border: none;
-    width: 24vw;
-    height: 5vh;
-    /* margin-bottom: 20px; */
-    direction: rtl;
+  border: none;
+  width: 35vw;
+  height: 5vh;
 }
 
-input[type=submit] {
-    background-color: #D31C75;
-    color: #FFFFFF;
-    border: none;
-    width: 8vw;
-    height: 5vh;
-    font: normal normal bold 22px/30px Heebo;
-    font-size: 1.3rem;
+.button input {
+  background-color: #d31c75;
+  color: #ffffff;
+  border: none;
+  width: 15vw;
+  height: 5vh;
+  font: normal normal bold 22px/30px Heebo;
+  font-size: 0.8rem;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 .button {
-    text-align: right;
+  text-align: right;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 700px) {
+  .desktop-image {
+    display: none;
+  }
 
-    img[alt="desktopimage"] {
-        display: none;
-    }
+  .mobile-image {
+    display: block;
+    width: 100vw;
+  }
 
-    img[alt="mobileimage"] {
-        display: block;
-        width: 100vw;
-    }
+  .form-box h1 {
+    font: normal normal 900 25px/30px Heebo;
+  }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .form-box p {
+    font: normal normal normal 15px/22px Heebo;
+    text-align: center;
+    padding: 25px;
+  }
 
-    h1 {
-        font: normal normal 900 25px/30px Heebo;
-        /* margin-top: 42px; */
-        /* margin-bottom: unset; */
-        /* padding: 10px; */
+  .form-box {
+    width: 70vw;
+    top: 8%;
+  }
 
-    }
+  #Name,
+  #email {
+    width: 52vw;
+  }
 
-    p {
-        font: normal normal normal 15px/22px Heebo;
-        text-align: center;
-        /* margin-bottom: unset; */
-        padding: 25px;
-    }
+  .button input {
+    width: 20vw;
+  }
+}
 
-    .form {
-        width: 70vw;
-        height: 75vh;
-        position: absolute;
-        top: 89px;
-        bottom: 129px;
-    }
+@media (min-width: 1000px) {
+  .form-box {
+    width: 30%;
+  }
 
-    label {
-        font: normal normal bold 14px/21px Heebo;
-    }
+  .form-box h1 {
+    font-family: Heebo;
+    font-size: 2.5rem;
+  }
 
-    #Name {
-        width: 52vw;
-        height: 5vh;
-        /* margin-bottom: 25px; */
-    }
+  .form-box p {
+    padding: 25px;
+  }
 
-    #email {
-        width: 52vw;
-        height: 5vh;
-        /* margin-bottom: 21px; */
-    }
-
-    input[type=submit] {
-        width: 20vw;
-        height: 5vh;
-        font: normal normal bold 15px/20px Heebo;
-    }
+  #Name,
+  #email {
+    width: 25vw;
+  }
 }
