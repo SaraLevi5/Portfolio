@@ -10,13 +10,12 @@
 }
 
 .top {
-  /* border: 1px solid #000; */
   display: flex;
   justify-content: space-between;
 }
 
 #top-line {
-  background-color: #FDBD03;
+  background-color: #fdbd03;
   width: 22.5vw;
   height: 1.9vh;
 }
@@ -24,7 +23,7 @@
 .whatsapp-icon {
   width: 5vw;
   height: 10vh;
-  background-color: #FDBD03;
+  background-color: #fdbd03;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -38,7 +37,6 @@
 }
 
 .main {
-  /* border: 1px solid #ec0e0e; */
   height: 79vh;
   display: flex;
   justify-content: space-evenly;
@@ -46,51 +44,38 @@
   align-items: center;
 }
 
-/* 
-.title {
-  border: 1px solid #ec0e0e;
-} */
-
 .main .phone-img img {
-  /* border: 1px solid #000; */
   width: 27.9vw;
   height: 80vh;
 }
 
-
 .title h1 {
-  color: #FDBD03;
+  color: #fdbd03;
   font: normal normal 900 66px/97px Heebo;
   text-align: right;
 }
 
 .title p {
-  /* border: 1px solid #000; */
   color: #020253;
   font: normal normal normal 20px/29px Heebo;
   text-align: right;
   direction: rtl;
-
 }
 
 .form-section1 {
-  /* border: 1px solid #ec0e0e; */
   height: 10vh;
   display: flex;
-  /* flex-wrap: wrap; */
+
   justify-content: space-between;
-  /* align-items: end; */
 }
 
 .form-section2 {
-  /* border: 1px solid #1100ff; */
   height: 28vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
 }
-
 
 form label {
   font: normal normal bold 16px/24px Heebo;
@@ -103,8 +88,8 @@ form label {
   width: 21.5vw;
   height: 5vh;
   border: none;
-  background-color: #E5EEFF;
-  border-bottom: 4px solid #FDBD03;
+  background-color: #e5eeff;
+  border-bottom: 4px solid #fdbd03;
   direction: rtl;
 }
 
@@ -112,15 +97,15 @@ form label {
   width: 44vw;
   height: 15vh;
   border: none;
-  background-color: #E5EEFF;
-  border-bottom: 4px solid #FDBD03;
+  background-color: #e5eeff;
+  border-bottom: 4px solid #fdbd03;
   direction: rtl;
 }
 
 #submit {
   font: normal normal bold 22px/30px Heebo;
   border: none;
-  background-color: #FDBD03;
+  background-color: #fdbd03;
   width: 166px;
   height: 50px;
   transition: 0.4s;
@@ -133,20 +118,17 @@ form label {
 }
 
 .icons {
-  /* border: 1px solid #000; */
   width: 35vw;
   height: 13vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
 }
 
 .icons .icon {
-  /* border: 1px solid #000; */
   width: 5vw;
   height: 10vh;
-  background-color: #FDBD03;
+  background-color: #fdbd03;
   border-radius: 50%;
   box-shadow: 0px 3px 6px #00000029;
   display: flex;
@@ -173,10 +155,10 @@ img[alt="instagram"] {
 .bottom-line {
   width: 54vw;
   height: 1.9vh;
-  background-color: #FDBD03;
+  background-color: #fdbd03;
 }
 
-@media (width<=600px) {
+@media (max-width: 750px) {
   .container {
     width: 100vw;
     display: flex;
@@ -201,7 +183,6 @@ img[alt="instagram"] {
   }
 
   .main {
-    /* border: 1px solid #000; */
     height: 800px;
     flex-direction: column-reverse;
   }
@@ -211,10 +192,7 @@ img[alt="instagram"] {
     height: 16vh;
   }
 
-
   .content {
-    /* border: 1px solid #000; */
-    /* height: 80vh; */
     display: flex;
     flex-direction: column;
   }
@@ -231,13 +209,12 @@ img[alt="instagram"] {
 
   .form-section1 {
     height: 20vh;
-    /* border: 1px solid #000; */
+
     flex-direction: column;
     justify-content: space-evenly;
   }
 
   .form-section2 {
-    /* border: 1px solid #000; */
     height: 25.5vh;
   }
 
@@ -249,13 +226,13 @@ img[alt="instagram"] {
   #email {
     width: 309px;
     height: 37px;
-    border-bottom: 3px solid #FDBD03;
+    border-bottom: 3px solid #fdbd03;
   }
 
   #message {
     width: 309px;
     height: 106px;
-    border-bottom: 3px solid #FDBD03;
+    border-bottom: 3px solid #fdbd03;
   }
 
   #submit {
@@ -265,7 +242,6 @@ img[alt="instagram"] {
   }
 
   .icons {
-    /* border: 1px solid #000; */
     width: 75vw;
     justify-content: space-evenly;
   }

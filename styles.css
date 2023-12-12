@@ -29,7 +29,7 @@ header a {
   transition: 0.3s linear;
 }
 
-nav a:active {
+nav a:hover {
   color: var(--color);
 }
 
