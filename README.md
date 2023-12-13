@@ -8,7 +8,7 @@ Technologies Used:
 -CSS
 -Bootstrap
 -Sass
-
+<br>
 Landing Pages:
 The portfolio consists of 6 landing pages, each highlighting different aspects of my work, skills, and projects.
 
