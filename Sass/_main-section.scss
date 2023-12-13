@@ -1,0 +1,13 @@
+#Main {
+  background-image: url("./images/backImage.jpg");
+  width: 100vw;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  max-width: 80vw;
+  font-family: $font1;
+}

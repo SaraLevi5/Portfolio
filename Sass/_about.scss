@@ -1,0 +1,33 @@
+#About {
+  width: 100vw;
+  min-height: 50vw;
+}
+
+#aBitAboutMe {
+  padding: 1rem;
+  font-family: $font1;
+  font-size: $fz;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-box {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff);
+}
+
+#myImage {
+  max-width: 30vw;
+  border-radius: 25%;
+  filter: grayscale(100%);
+  margin-bottom: 2rem;
+  transition: 0.2s linear;
+  &:hover {
+    filter: none;
+  }
+}

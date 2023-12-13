@@ -1,0 +1,68 @@
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #f8f1f6;
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-between;
+  width: 100vw;
+  height: 70px;
+  padding: 0.5rem;
+  z-index: 99999999999;
+  a {
+    text-decoration: none;
+
+    font-family: $font1;
+    font-size: $fz;
+    transition: 0.3s linear;
+  }
+}
+
+nav {
+  overflow: hidden;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50vw;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    li {
+      width: 10vw;
+      height: 2.5rem;
+      a {
+        color: black;
+        &:hover {
+          color: $color;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  .myPhoto {
+    max-width: 40px;
+    border-radius: 50%;
+  }
+  a {
+    font-family: $font2;
+    font-size: 1.5rem;
+    color: black;
+  }
+}
+
+.hamburger {
+  color: #000;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  display: none;
+  padding: 1rem;
+}

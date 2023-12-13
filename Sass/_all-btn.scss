@@ -1,0 +1,13 @@
+#About .btn-primary,
+#Works .btn-primary,
+#contact .btn-primary {
+  background-color: $color;
+  border: none;
+  color: #000;
+  border-radius: 25px;
+  font-size: $fz;
+  transition: 0.4s;
+  &:hover {
+    background-color: #da7cbc;
+  }
+}
