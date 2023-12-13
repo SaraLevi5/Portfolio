@@ -35,13 +35,16 @@ Open the index.html file in your browser to view the portfolio.
 How to Run Locally
 If you want to run the portfolio locally for development <br> or testing purposes, follow these steps:
 <br><br>
-Install a code editor such as Visual Studio Code.
+-Install a code editor such as Visual Studio Code.
 <br>
-Open the project folder in your code editor.
 <br>
-Modify the HTML, CSS, or Sass files as needed.
+-Open the project folder in your code editor.
 <br>
-Open the index.html file in your browser to view the changes.
+<br>
+-Modify the HTML, CSS, or Sass files as needed.
+<br>
+<br>
+-Open the index.html file in your browser to view the changes.
 <br><br>
 Author,
 Sarah Levi
