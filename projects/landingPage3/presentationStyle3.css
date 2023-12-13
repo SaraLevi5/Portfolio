@@ -11,11 +11,15 @@
 }
 
 .myPhoto {
-  max-width: 5vw;
+  max-width: 40px;
   border-radius: 50%;
 }
 
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #faedf5;
   display: flex;
   min-height: 9vh;
 }

@@ -11,7 +11,7 @@
 }
 
 .myPhoto {
-  max-width: 4vw;
+  max-width: 40px;
   border-radius: 50%;
 }
 
@@ -19,7 +19,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #fce8f4;
+  background-color: #faedf5;
   display: flex;
   align-items: first baseline;
   justify-content: space-between;
