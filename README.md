@@ -4,11 +4,11 @@ Portfolio project
 This is my personal portfolio project showcasing my skills and projects. The portfolio is built using HTML, CSS, Bootstrap, and Sass.
 
 Technologies Used:
--HTML
--CSS
--Bootstrap
--Sass
-<br>
+-HTML <br>
+-CSS <br>
+-Bootstrap <br>
+-Sass <br>
+<br><br>
 Landing Pages:
 The portfolio consists of 6 landing pages, each highlighting different aspects of my work, skills, and projects.
 
