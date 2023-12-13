@@ -3,7 +3,7 @@
 Portfolio project
 This is my personal portfolio project showcasing my skills and projects. The portfolio is built using HTML, CSS, Bootstrap, and Sass.
 
-Technologies Used:
+Technologies Used:<br>
 -HTML <br>
 -CSS <br>
 -Bootstrap <br>
