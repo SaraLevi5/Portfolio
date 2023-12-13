@@ -246,7 +246,7 @@ nav {
     width: 100vw;
     height: 10vh;
     background-color: #ffa3e2;
-    border-bottom: inset 1px #3a3a3a8f;
+    border-bottom: dashed 1px #7777778f;
   }
   nav ul {
     position: absolute;
