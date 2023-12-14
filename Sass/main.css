@@ -13,6 +13,7 @@ header {
   display: flex;
   align-items: first baseline;
   justify-content: space-between;
+  width: 100vw;
   height: 70px;
   padding: 0.5rem;
   z-index: 99999999999;
@@ -74,7 +75,7 @@ nav ul li a:hover {
 #Main {
   background-image: url("./images/backImage.jpg");
   width: 100vw;
-  height: 45vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,7 +264,12 @@ nav ul li a:hover {
     max-width: 150px;
     height: 150px;
   }
+  #icons {
+    height: 75vh;
+  }
 }
-#icons {
-  height: 55vh;
+@media (max-width: 1100px) {
+  #icons {
+    height: 30vh;
+  }
 }/*# sourceMappingURL=main.css.map */

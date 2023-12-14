@@ -52,7 +52,12 @@
     max-width: 150px;
     height: 150px;
   }
+  #icons {
+    height: 75vh;
+  }
 }
-#icons {
-  height: 55vh;
+@media (max-width: 1100px) {
+  #icons {
+    height: 30vh;
+  }
 }
