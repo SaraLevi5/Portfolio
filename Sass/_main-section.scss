@@ -1,5 +1,7 @@
 #Main {
-  background-image: url("./images/backImage.jpg");
+  background-image: linear-gradient(#ec26ad3f, #6bb3e347),
+    url("./images/backImage.jpg");
+  box-shadow: inset 5px 5px 30px #0000009c;
   width: 100vw;
   height: 60vh;
   display: flex;

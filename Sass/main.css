@@ -73,7 +73,8 @@ nav ul li a:hover {
 }
 
 #Main {
-  background-image: url("./images/backImage.jpg");
+  background-image: linear-gradient(rgba(236, 38, 173, 0.2470588235), rgba(107, 179, 227, 0.2784313725)), url("./images/backImage.jpg");
+  box-shadow: inset 5px 5px 30px rgba(0, 0, 0, 0.6117647059);
   width: 100vw;
   height: 60vh;
   display: flex;
@@ -155,8 +156,9 @@ nav ul li a:hover {
 }
 
 #contact {
+  font-family: Preahvihear;
   width: 100vw;
-  background-color: #3a3a3a;
+  background-color: rgba(58, 58, 58, 0.9137254902);
   min-height: 60vh;
   display: flex;
   justify-content: space-between;
@@ -170,9 +172,12 @@ nav ul li a:hover {
 #form {
   color: #ffffff;
 }
+#form h3 {
+  font-size: 2.5rem;
+}
 
 #icons {
-  height: 20vh;
+  height: 30vh;
   padding: 2rem;
   background-color: rgba(218, 124, 189, 0.5960784314);
   display: flex;
@@ -241,10 +246,13 @@ nav ul li a:hover {
   }
   nav ul li {
     text-align: center;
-    width: 100vw;
-    height: 10vh;
+    width: 50vw;
+    height: 25vh;
     background-color: #ffa3e2;
-    border-bottom: dashed 1px rgba(119, 119, 119, 0.5607843137);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4235294118);
   }
   nav ul {
     position: absolute;
@@ -253,6 +261,9 @@ nav ul li a:hover {
   }
   .myPhoto {
     max-width: 10vw;
+    position: absolute;
+    top: 20%;
+    left: 4%;
   }
   .logo #name {
     display: none;
@@ -266,10 +277,5 @@ nav ul li a:hover {
   }
   #icons {
     height: 75vh;
-  }
-}
-@media (max-width: 1100px) {
-  #icons {
-    height: 30vh;
   }
 }/*# sourceMappingURL=main.css.map */
